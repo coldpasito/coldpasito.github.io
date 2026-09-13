@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f5f0e9" />
+    <title>Центр косметологии и эпиляции</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="site-shell">
+      <header class="header" data-header>
+        <a class="brand" href="#top" aria-label="Центр косметологии и эпиляции — главная">
+          <span class="brand-mark"><img src="assets/logo-original.png" alt="Официальный логотип центра" /></span>
+          <span class="brand-name">Центр<br />косметологии и эпиляции</span>
+        </a>
+
+        <nav class="nav" aria-label="Основная навигация" data-menu>
+          <a href="#services">Услуги</a>
+          <a href="#prices">Цены</a>
+          <a href="#about">О центре</a>
+          <a href="#reviews">Отзывы</a>
+          <a href="#contacts">Контакты</a>
+          <a class="nav-mobile-cta" href="#booking">Записаться онлайн</a>
+        </nav>
+
+        <div class="header-actions">
+          <span class="address">ул. Фрунзе, 21</span>
+          <a class="button button--small" href="#booking">Записаться</a>
+          <button class="menu-toggle" type="button" aria-label="Открыть меню" aria-expanded="false" data-menu-toggle>
+            <span></span><span></span>
+          </button>
+        </div>
+      </header>
+
+      <section class="hero" id="top" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow"><span></span> Косметология <i>•</i> Эпиляция <i>•</i> Массаж</p>
+          <h1 id="hero-title">Центр косметологии<br />и эпиляции</h1>
+          <p class="hero-description"><strong>Профессиональный подход к красоте и уходу.</strong> <span class="description-detail">Косметология, эпиляция, массаж и уходовые процедуры — всё необходимое для заботы о себе в одном центре.</span></p>
+          <div class="hero-ctas">
+            <a class="button" href="#booking">Записаться онлайн <span aria-hidden="true">↗</span></a>
+            <a class="text-link" href="#services">Смотреть услуги <span aria-hidden="true">→</span></a>
+          </div>
+        </div>
+
+        <div class="hero-visual" aria-label="Зона ожидания центра">
+          <div class="visual-frame">
+            <img src="assets/waiting-area.png" alt="Реальная зона ожидания центра косметологии и эпиляции" />
+          </div>
+        </div>
+
+        <div class="trust-row" aria-label="Данные о центре">
+          <div class="trust-item"><span class="trust-number">4,8 <b>★</b></span><span>на Яндекс Картах</span></div>
+          <div class="trust-divider" aria-hidden="true"></div>
+          <div class="trust-item"><span class="trust-number">60+</span><span>отзывов</span></div>
+          <div class="trust-divider" aria-hidden="true"></div>
+          <div class="trust-item trust-item--wide"><span class="trust-dot" aria-hidden="true"></span><span>Большой выбор процедур</span></div>
+        </div>
+      </section>
+
+      <div class="next-section-hint" aria-hidden="true"><span>Направления центра</span><span class="hint-line"></span><span>01</span></div>
+
+      <section class="services-section" id="services" aria-labelledby="services-title">
+        <div class="services-intro">
+          <p class="section-kicker">Услуги центра</p>
+          <div class="section-heading">
+            <h2 id="services-title">Выберите подходящую процедуру</h2>
+            <p>Узнайте подробнее о процедурах, стоимости и выберите удобное время для записи.</p>
+          </div>
+        </div>
+
+        <div class="catalog-controls">
+          <div class="service-tabs" role="tablist" aria-label="Категории услуг">
+            <button class="service-tab is-active" type="button" role="tab" aria-selected="true" data-filter="all">Все услуги</button>
+            <button class="service-tab" type="button" role="tab" aria-selected="false" data-filter="cosmetology">Косметология</button>
+            <button class="service-tab" type="button" role="tab" aria-selected="false" data-filter="epilation">Эпиляция</button>
+            <button class="service-tab" type="button" role="tab" aria-selected="false" data-filter="massage">Массаж</button>
+            <button class="service-tab" type="button" role="tab" aria-selected="false" data-filter="skincare">Уходовые процедуры</button>
+            <button class="service-tab" type="button" role="tab" aria-selected="false" data-filter="pedicure">Педикюр</button>
+          </div>
+          <label class="service-search"><span class="visually-hidden">Найти процедуру</span><input type="search" placeholder="Найти процедуру" autocomplete="off" data-service-search /></label>
+        </div>
+
+        <div class="services-grid" data-services-grid>
+          <article class="service-card" data-service="mask" data-categories="cosmetology skincare" data-search="маска по типу кожи уходовые процедуры косметология">
+            <div class="service-image"><img src="assets/service-skin-mask.png" alt="Маска по типу кожи" /></div>
+            <div class="service-card-body">
+              <p class="service-category">Косметология / Уходовые процедуры</p>
+              <h3>Маска по типу кожи</h3>
+              <p class="service-summary">Уходовая процедура с маской, подобранной по типу кожи.</p>
+              <p class="service-price">1 000–1 500 ₽</p>
+              <div class="service-actions"><button class="detail-link" type="button" data-detail="mask">Подробнее</button><button class="button service-book" type="button" data-book="mask">Записаться</button></div>
+            </div>
+          </article>
+
+          <article class="service-card" data-service="intro" data-categories="cosmetology" data-search="визит знакомство косметология">
+            <div class="service-image"><img src="assets/service-intro-visit.png" alt="Визит-знакомство в центре" /></div>
+            <div class="service-card-body">
+              <p class="service-category">Косметология</p>
+              <h3>Визит-знакомство</h3>
+              <p class="service-summary">Первичное знакомство со специалистом и подбор дальнейшего ухода.</p>
+              <p class="service-price">999 ₽</p>
+              <div class="service-actions"><button class="detail-link" type="button" data-detail="intro">Подробнее</button><button class="button service-book" type="button" data-book="intro">Записаться</button></div>
+            </div>
+          </article>
+
+          <article class="service-card" data-service="massage90" data-categories="massage" data-search="ручной массаж 90 минут">
+            <div class="service-image"><img src="assets/service-massage-90.png" alt="Ручной массаж — 90 минут" /></div>
+            <div class="service-card-body">
+              <p class="service-category">Массаж</p>
+              <h3>Ручной массаж — 90 минут</h3>
+              <p class="service-summary">Комплексный сеанс массажа продолжительностью 90 минут.</p>
+              <p class="service-price">3 190 ₽</p>
+              <div class="service-actions"><button class="detail-link" type="button" data-detail="massage90">Подробнее</button><button class="button service-book" type="button" data-book="massage90">Записаться</button></div>
+            </div>
+          </article>
+
+          <article class="service-card" data-service="massage120" data-categories="massage" data-search="ручной массаж 120 минут">
+            <div class="service-image"><img src="assets/service-massage-120.png" alt="Ручной массаж — 120 минут" /></div>
+            <div class="service-card-body">
+              <p class="service-category">Массаж</p>
+              <h3>Ручной массаж — 120 минут</h3>
+              <p class="service-summary">Продолжительный сеанс массажа для комплексного ухода за телом.</p>
+              <p class="service-price">3 890 ₽</p>
+              <div class="service-actions"><button class="detail-link" type="button" data-detail="massage120">Подробнее</button><button class="button service-book" type="button" data-book="massage120">Записаться</button></div>
+            </div>
+          </article>
+
+          <article class="service-card" data-service="pedicure" data-categories="pedicure" data-search="аппаратный педикюр с покрытием">
+            <div class="service-image"><img src="assets/service-pedicure-apparatus.png" alt="Аппаратный педикюр" /></div>
+            <div class="service-card-body">
+              <p class="service-category">Педикюр</p>
+              <h3>Аппаратный педикюр</h3>
+              <p class="service-summary">Аккуратный уход за стопами и ногтями с покрытием.</p>
+              <p class="service-price">2 800 ₽</p>
+              <div class="service-actions"><button class="detail-link" type="button" data-detail="pedicure">Подробнее</button><button class="button service-book" type="button" data-book="pedicure">Записаться</button></div>
+            </div>
+          </article>
+
+          <article class="service-card" data-service="pedicureExtra" data-categories="pedicure" data-search="педикюр дополнительные услуги">
+            <div class="service-image"><img src="assets/service-pedicure-extra.png" alt="Педикюр — дополнительные услуги" /></div>
+            <div class="service-card-body">
+              <p class="service-category">Педикюр</p>
+              <h3>Педикюр — дополнительные услуги</h3>
+              <p class="service-summary">Дополнительный уход и аккуратное оформление ногтей.</p>
+              <p class="service-price">1 500 ₽</p>
+              <div class="service-actions"><button class="detail-link" type="button" data-detail="pedicureExtra">Подробнее</button><button class="button service-book" type="button" data-book="pedicureExtra">Записаться</button></div>
+            </div>
+          </article>
+        </div>
+
+        <p class="catalog-empty" data-catalog-empty hidden>По этому направлению услуги появятся в полном каталоге.</p>
+        <div class="catalog-more"><button class="catalog-more-button" type="button">Смотреть все услуги</button></div>
+      </section>
+    </main>
+
+    <div class="drawer-backdrop" data-drawer-backdrop></div>
+    <aside class="service-drawer" aria-hidden="true" aria-labelledby="drawer-title" role="dialog" aria-modal="true" data-drawer>
+      <div class="drawer-top"><p class="section-kicker" data-drawer-category>Категория</p><button class="drawer-close" type="button" data-drawer-close>Закрыть</button></div>
+      <div class="drawer-scroll">
+        <h2 id="drawer-title" data-drawer-title>Название процедуры</h2>
+        <p class="drawer-description" data-drawer-description></p>
+        <div class="drawer-detail"><h3>Для кого подходит</h3><ul data-drawer-for></ul></div>
+        <div class="drawer-detail"><h3>Как проходит процедура</h3><p data-drawer-how></p></div>
+        <dl class="drawer-meta" data-drawer-meta></dl>
+      </div>
+      <div class="drawer-footer"><p class="drawer-price" data-drawer-price></p><button class="button drawer-book" type="button" data-drawer-book>Записаться на процедуру</button></div>
+    </aside>
+    <div class="booking-toast" aria-live="polite" role="status" data-booking-toast></div>
+    <script src="script.js"></script>
+  </body>
+</html>
